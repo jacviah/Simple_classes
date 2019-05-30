@@ -16,9 +16,9 @@ public class Triangle {
         double a = (two.getY() - one.getY()) / (two.getX() - one.getX());
         double b = one.getY() - a * one.getX();
 
-        if (Double.compare((a * three.getX() + b),three.getY())==0) {
+        if (Double.compare((a * three.getX() + b), three.getY()) == 0) {
             System.out.println("All three points lie on the same line");
-        } else if (!one.equals(two)&(!one.equals(three))&(!two.equals(three))){
+        } else if (!one.equals(two) & (!one.equals(three)) & (!two.equals(three))) {
             this.one = one;
             this.two = two;
             this.three = three;
@@ -71,9 +71,9 @@ public class Triangle {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Triangle triangle = (Triangle) o;
-        return (Objects.equals(one, triangle.one)|Objects.equals(one, triangle.two)|Objects.equals(one, triangle.three)) &&
-                (Objects.equals(two, triangle.one)|Objects.equals(two, triangle.two)|Objects.equals(two, triangle.three)) &&
-                (Objects.equals(three, triangle.one)|Objects.equals(three, triangle.two)|Objects.equals(three, triangle.three));
+        return (Objects.equals(one, triangle.one) | Objects.equals(one, triangle.two) | Objects.equals(one, triangle.three)) &&
+                (Objects.equals(two, triangle.one) | Objects.equals(two, triangle.two) | Objects.equals(two, triangle.three)) &&
+                (Objects.equals(three, triangle.one) | Objects.equals(three, triangle.two) | Objects.equals(three, triangle.three));
     }
 
     @Override
