@@ -16,7 +16,7 @@ public class Triangle {
         double a = (two.getY() - one.getY()) / (two.getX() - one.getX());
         double b = one.getY() - a * one.getX();
 
-        if ((a * three.getX() + b) == three.getY()) {
+        if (Double.compare((a * three.getX() + b),three.getY())==0) {
             System.out.println("All three points lie on the same line");
         } else if (!one.equals(two)&(!one.equals(three))&(!two.equals(three))){
             this.one = one;
