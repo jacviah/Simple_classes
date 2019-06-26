@@ -34,24 +34,12 @@ public class Triangle {
         return one;
     }
 
-    public void setOne(Point one) {
-        this.one = one;
-    }
-
     public Point getTwo() {
         return two;
     }
 
-    public void setTwo(Point two) {
-        this.two = two;
-    }
-
     public Point getThree() {
         return three;
-    }
-
-    public void setThree(Point three) {
-        this.three = three;
     }
 
     public double getSide1() {
